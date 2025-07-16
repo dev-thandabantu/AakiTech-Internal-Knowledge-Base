@@ -1,0 +1,82 @@
+# Environment variables (contains API keys)
+.env
+
+# Python virtual environment
+.venv/
+venv/
+env/
+rag-env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Vector store (can be large)
+vector_index/
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Local data files (your actual knowledge base documents)
+# Uncomment the next line if you don't want to share your documents
+# *.txt
