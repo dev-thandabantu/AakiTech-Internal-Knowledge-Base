@@ -125,3 +125,33 @@ You've exceeded your OpenAI quota. Switch to HuggingFace embeddings or add credi
 - **Text Splitting**: 500 characters with 50 character overlap
 - **Web Framework**: Streamlit for the UI
 - **Embeddings**: Sentence Transformers or OpenAI
+
+## Deployment
+
+### Streamlit Community Cloud (Recommended)
+
+1. **Push to GitHub**: Ensure your code is on GitHub
+2. **Visit Streamlit Cloud**: Go to [share.streamlit.io](https://share.streamlit.io)
+3. **Connect GitHub**: Sign in and connect your GitHub account
+4. **Deploy**: 
+   - Click "New app"
+   - Select your repository: `dev-thandabantu/AakiTech-Internal-Knowledge-Base`
+   - Main file path: `streamlit_app.py`
+   - Click "Deploy!"
+
+### Environment Variables for Deployment
+
+In Streamlit Cloud settings, add:
+```
+OPENAI_API_KEY=your-actual-api-key-here
+```
+
+### Local Development vs Production
+
+- **Local**: Uses documents from your local folder
+- **Production**: Uses sample documents included in the repo
+- **Vector Store**: Will be created automatically on first run
+
+## Live Demo
+
+🚀 **[Try the live app here](https://your-app-name.streamlit.app)** (will be available after deployment)

@@ -1,0 +1,34 @@
+AakiTech Development Guidelines
+
+Code Standards:
+- Follow PEP 8 for Python code
+- Use meaningful variable names
+- Write comprehensive docstrings
+- Implement proper error handling
+
+Version Control:
+- Use Git for all projects
+- Create feature branches for new development
+- Write descriptive commit messages
+- Review code before merging
+
+Development Process:
+1. Planning and requirements gathering
+2. Design and architecture review
+3. Implementation with testing
+4. Code review and quality assurance
+5. Deployment and monitoring
+
+Tools and Technologies:
+- IDEs: VS Code, PyCharm
+- Version Control: Git, GitHub
+- Testing: pytest, unittest
+- CI/CD: GitHub Actions
+- Documentation: Markdown, Sphinx
+
+Best Practices:
+- Regular code reviews
+- Automated testing
+- Continuous integration
+- Documentation updates
+- Security considerations

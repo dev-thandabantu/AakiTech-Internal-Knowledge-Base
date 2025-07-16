@@ -1,0 +1,28 @@
+AakiTech Company Overview
+
+Founded: 2023
+Mission: Empowering African businesses through innovative technology solutions
+
+Services:
+- Custom Software Development
+- EdTech Solutions
+- Digital Transformation Consulting
+- AI Integration Services
+
+Core Values:
+- Innovation
+- Quality
+- Customer-Centricity
+- Continuous Learning
+
+Target Markets:
+- Educational Institutions
+- Small and Medium Enterprises (SMEs)
+- Non-profit Organizations
+- Government Agencies
+
+Technology Stack:
+- Python/Django for backend development
+- React/Vue.js for frontend
+- AI/ML integration with OpenAI and HuggingFace
+- Cloud deployment on AWS/Azure

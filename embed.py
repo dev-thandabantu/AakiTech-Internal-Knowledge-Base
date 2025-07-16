@@ -47,7 +47,8 @@ def store_in_faiss(chunks, use_openai=False):
 
 # Run the full pipeline when script is executed
 if __name__ == "__main__":
-    folder_path = 'C:/Users/User/Documents/Aaki Tech/AakiTech Internal Knowledge Base (POC)'
+    # Use current directory for deployment compatibility
+    folder_path = '.'  # Look for .txt files in the current directory
 
     print("🔍 Loading documents...")
     documents = load_documents_from_folder(folder_path)

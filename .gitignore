@@ -59,8 +59,8 @@ ipython_config.py
 .vscode/
 *.code-workspace
 
-# Vector store (can be large)
-vector_index/
+# Vector store (can be large - uncomment to exclude)
+# vector_index/
 
 # Log files
 *.log
