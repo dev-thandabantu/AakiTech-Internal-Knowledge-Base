@@ -13,7 +13,7 @@ A RAG (Retrieval-Augmented Generation) system for searching through internal doc
 - 🔄 **Flexible Embeddings**: Switch between OpenAI and free HuggingFace embeddings
 - 📊 **Similarity Scores**: See how relevant each result is
 - 📄 **Source Attribution**: Know which document each answer came from
-- ⚡ **Fast Performance**: FAISS vector store for quick retrieval
+- ⚡ **Fast Performance**: Chroma vector store for quick retrieval
 - 🔒 **Secure**: API keys stored in environment variables
 
 ## Installation
@@ -125,6 +125,7 @@ You've exceeded your OpenAI quota. Switch to HuggingFace embeddings or add credi
 - **Text Splitting**: 500 characters with 50 character overlap
 - **Web Framework**: Streamlit for the UI
 - **Embeddings**: Sentence Transformers or OpenAI
+- **Vector Store**: Chroma for similarity search
 
 ## Deployment
 
@@ -133,7 +134,7 @@ You've exceeded your OpenAI quota. Switch to HuggingFace embeddings or add credi
 1. **Push to GitHub**: Ensure your code is on GitHub
 2. **Visit Streamlit Cloud**: Go to [share.streamlit.io](https://share.streamlit.io)
 3. **Connect GitHub**: Sign in and connect your GitHub account
-4. **Deploy**: 
+4. **Deploy**:
    - Click "New app"
    - Select your repository: `dev-thandabantu/AakiTech-Internal-Knowledge-Base`
    - Main file path: `streamlit_app.py`
@@ -142,6 +143,7 @@ You've exceeded your OpenAI quota. Switch to HuggingFace embeddings or add credi
 ### Environment Variables for Deployment
 
 In Streamlit Cloud settings, add:
+
 ```
 OPENAI_API_KEY=your-actual-api-key-here
 ```

@@ -1,6 +1,6 @@
 import streamlit as st
 from dotenv import load_dotenv
-from langchain_community.vectorstores import FAISS
+from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain_huggingface import HuggingFaceEmbeddings
 import os
@@ -17,7 +17,7 @@ st.set_page_config(
 
 @st.cache_resource
 def load_vector_store(use_openai=False):
-    """Load the FAISS vector store (cached for better performance)"""
+    """Load the Chroma vector store (cached for better performance)"""
     try:
         if use_openai:
             embedding_model = OpenAIEmbeddings(model="text-embedding-3-small")
@@ -26,12 +26,16 @@ def load_vector_store(use_openai=False):
                 model_name="sentence-transformers/all-MiniLM-L6-v2"
             )
         
-        faiss_index = FAISS.load_local(
-            "vector_index", 
-            embedding_model, 
-            allow_dangerous_deserialization=True
+        # Check if chroma_db exists, if not create it
+        if not os.path.exists("./chroma_db"):
+            st.error("Vector store not found. Please run embed.py first to create the database.")
+            return None
+            
+        chroma_db = Chroma(
+            persist_directory="./chroma_db",
+            embedding_function=embedding_model
         )
-        return faiss_index
+        return chroma_db
     except Exception as e:
         st.error(f"Error loading vector store: {e}")
         return None

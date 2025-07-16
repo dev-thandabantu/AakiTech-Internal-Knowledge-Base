@@ -60,7 +60,7 @@ ipython_config.py
 *.code-workspace
 
 # Vector store (can be large - uncomment to exclude)
-# vector_index/
+# chroma_db/
 
 # Log files
 *.log
